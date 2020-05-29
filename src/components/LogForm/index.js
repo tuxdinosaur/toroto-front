@@ -1,5 +1,7 @@
 import React from 'react'
 
+import Button from './Button'
+
 function LogForm () {
   return (
     <div className='log__container'>
@@ -82,7 +84,9 @@ function LogForm () {
           </div>
 
           <div className='tab-register__button'>
-            <button type='button' className='btn btn-toroto'>Crear cuenta</button>
+            <Button
+              text='Crear cuenta'
+            />
           </div>
 
         </div>
@@ -106,7 +110,9 @@ function LogForm () {
           </div>
 
           <div className='tab-register__button'>
-            <button type='button' className='btn btn-toroto'>Inicia sesión</button>
+            <Button
+              text='Iniciar sesión'
+            />
           </div>
 
         </div>
