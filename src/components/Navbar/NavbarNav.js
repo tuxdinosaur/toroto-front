@@ -7,6 +7,7 @@ function NavbarNav () {
     <ul className='navbar-nav ml-auto'>
       <NavbarNavItem
         text='Ayuda'
+        to='#'
       />
     </ul>
   )

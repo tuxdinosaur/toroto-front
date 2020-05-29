@@ -1,13 +1,199 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Inter', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container-fluid::before {
+  content: "";
+  background: url("../images/wil-stewart.jpg");
+  /* background: #4F4D53; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
 }
+
+.container-fluid::after {
+  background-color: #6D6875;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.45;
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: #6D6875;
+}
+
+.navbar-light .navbar-brand {
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #ffffff;
+  font-weight: 400;
+}
+
+/* CONTAINER */
+.home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.home__section {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0;
+}
+
+/* DESCRIPTION */
+.description-title {
+  color: #ffffff;
+  font-size: 24px;
+}
+
+.description-title--light {
+  font-weight: 300;
+}
+
+.description-title--bold {
+  font-weight: 700;
+}
+
+.description-text {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+/* LOG */
+.log__container {
+  background: #746e7e;
+  border-radius: 5px;
+  color: #ffffff;
+  padding: 20px;
+}
+
+.log__container--tabs {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.log__container--tabs > li {
+  padding: 10px;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #ffffff;
+  background-color: transparent;
+  border-bottom: 5px solid #CE8C6D;
+  border-radius: 0;
+}
+
+.log__container--tabs .nav-link {
+  color: rgba(255, 255, 255, 0.5);
+  border-bottom: 5px solid transparent;
+  border-radius: 0;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  padding: 0;
+  padding-bottom: 5px;
+}
+
+.log__container--tabs .nav-link:hover {
+  color: white;
+}
+
+.tab-register__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.form-control {
+  border: none;
+  color: #fff;
+  background-color: #4f4d53;
+}
+
+.radio-options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.radio--2 {
+  margin: 0;
+}
+
+.form-check {
+  border: 1px solid #CE8C6D;
+  border-radius: 5px;
+  padding: 10px 20px;
+  width: 50%;
+}
+
+input:checked + label {
+  color: #CE8C6D;
+}
+
+.btn-toroto {
+  color: #ffffff;
+  background-color: #CE8C6D;
+  border-color: #CE8C6D;
+  font-weight: 700;
+}
+
+.btn-toroto:hover {
+  color: #ffffff;
+  background-color: #b47f66;
+  border-color: #b47f66;
+  font-weight: 700;
+}
+
+@media only screen and (min-height: 600px) {
+  .home {
+    height: calc(100vh - 56px);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .home {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .description-title {
+    font-size: 32px;
+  }
+  .description-text {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .description-title {
+    font-size: 42px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .description-title {
+    font-size: 56px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

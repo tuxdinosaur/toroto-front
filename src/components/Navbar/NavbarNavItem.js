@@ -5,7 +5,7 @@ function NavbarNavItem (props) {
     <li className='nav-item'>
       <a
         className='nav-link active'
-        href='#'
+        href={props.to}
       >
         {props.text}
       </a>
