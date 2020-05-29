@@ -1,4 +1,6 @@
-import React from 'react';
+import React from 'react'
+
+import Navbar from './components/Navbar'
 // import logo from './logo.svg';
 
 // import './assets/styles/App.css';
@@ -6,11 +8,12 @@ import React from 'react';
 // IMPORTA VISTA HOME
 // import Home from './views/Home'
 
-function App() {
+function App () {
   return (
-    <div className="App">
+    <div className='App'>
+      <Navbar />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
