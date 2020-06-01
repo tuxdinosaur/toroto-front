@@ -9,9 +9,7 @@ function Navbar () {
     <nav className='navbar navbar-expand-lg navbar-dark'>
 
       <NavbarBrand />
-
       <NavbarToggler />
-
       <NavbarCollapse />
 
     </nav>
